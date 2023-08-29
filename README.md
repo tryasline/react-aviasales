@@ -1,4 +1,4 @@
-MY PROJECT [react-aviasales-iyx10ocvf-tryasline.vercel.app]
+MY PROJECT (react-aviasales-iyx10ocvf-tryasline.vercel.app)
 
 # Getting Started with Create React App
 
