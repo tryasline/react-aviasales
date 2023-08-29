@@ -1,0 +1,87 @@
+{
+  "env": {
+    "browser": true,
+    "es2021": true
+  },
+  "ignorePatterns": ["node_modules", "dist", "build"],
+  "extends": [
+    "eslint:recommended",
+    "plugin:react/recommended",
+    "plugin:prettier/recommended",
+    "plugin:import/errors",
+    "plugin:import/warnings",
+    "airbnb",
+    "prettier"
+  ],
+  "parserOptions": {
+    "ecmaFeatures": {
+      "jsx": true
+    },
+    "ecmaVersion": 12,
+    "sourceType": "module",
+    "requireConfigFile": false,
+    "babelOptions": {
+      "parserOpts": {
+        "plugins": ["jsx"]
+      }
+    }
+  },
+  "parser": "@babel/eslint-parser",
+  "plugins": ["react", "prettier", "import"],
+  "rules": {
+    "class-methods-use-this": "off",
+    "prettier/prettier": ["error", { "endOfLine": "lf", "singleQuote": true, "parser": "flow" }],
+    "linebreak-style": [0, "unix"],
+    "quotes": ["error", "single"],
+    "semi": "off",
+    "no-unused-vars": "off",
+    "react/prefer-stateless-function": "off",
+    "react/destructuring-assignment": "off",
+    "jsx-a11y/no-autofocus": "off",
+    "import/no-extraneous-dependencies": "off",
+    "jsx-a11y/control-has-associated-label": "off",
+    "jsx-a11y/label-has-associated-control": "off",
+    "react/no-access-state-in-setstate": "off",
+    "no-shadow": "off",
+    "no-inner-declarations": "off",
+    "no-promise-executor-return": "off",
+    "no-empty": "off",
+    "no-await-in-loop": "off",
+    "array-callback-return": "off",
+    "react/sort-comp": "off",
+    "consistent-return": "off",
+    "no-nested-ternary": "off",
+    "default-param-last": "off",
+    "import/prefer-default-export": "off",
+    "react/react-in-jsx-scope": "off",
+    "react/prop-types": 0,
+    "no-restricted-syntax": "off",
+    "react/state-in-constructor": "off",
+    "react/static-property-placement": "off",
+    "react/jsx-props-no-spreading": "off",
+    " react/no-unused-class-component": "off",
+    "react/no-unused-class-component-methods": "off",
+    "react/jsx-no-constructed-context-values": "off",
+    "no-plusplus": "off",
+    "import/no-unresolved": [2, { "caseSensitive": false }],
+    "react/jsx-filename-extension": [1, { "extensions": [".js", ".jsx"] }],
+    "import/order": [
+      2,
+      {
+        "groups": ["builtin", "external", "internal", "parent", "sibling", "index"],
+        "newlines-between": "always"
+      }
+    ]
+  },
+  "settings": {
+    "import/resolver": {
+      "node": {
+        "extensions": [".js", ".jsx", ".ts", ".tsx"],
+        "moduleDirectory": ["node_modules", "src/"]
+      }
+    },
+    "react": {
+      "version": "detect"
+    }
+  }
+}

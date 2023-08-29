@@ -1,0 +1,54 @@
+.sideBar {
+  border: none;
+  color: rgba(74, 74, 74, 1);
+  grid-area: s;
+  background-color: rgba(255, 255, 255, 1);
+  border-radius: 7px;
+  max-height: 232px;
+
+  h4 {
+    margin-top: 15px;
+    margin-bottom: 12px;
+    margin-left: 13px;
+    font-weight: 600;
+  }
+
+  .checkContainer {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    height: 28px;
+    padding: 3px 10px;
+    border: 1px solid rgba(255, 255, 255, 1);
+  }
+
+  input {
+    width: 20px;
+    height: 20px;
+    border-color: rgba(154, 187, 206, 1);
+    cursor: pointer;
+  }
+
+  input[type="checkbox"]:checked {
+    background-color: red;
+    border-radius: 5px;
+  }
+
+  label {
+    margin-left: 10px;
+    font-weight: 300;
+    // cursor: pointer;
+  }
+
+  .checkContainer:hover {
+    background-color: rgb(200, 241, 252);
+    border: 1px solid rgba(33, 150, 243, 1);
+  }
+}
+
+@media (max-width: 800px) {
+  .sideBar {
+    width: 300px;
+    margin: 0 auto;
+  }
+}

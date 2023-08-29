@@ -1,0 +1,25 @@
+.container {
+  max-width: 900px;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 280px 250px 270px;
+  grid-template-rows: 100px 290px 1fr;
+  column-gap: 20px;
+  grid-template-areas:
+    "h h h"
+    "s c c"
+    ". c c";
+  font-family: "Open Sans";
+}
+
+@media (max-width: 800px) {
+  .container {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas:
+      "h"
+      "s"
+      "c";
+  }
+}

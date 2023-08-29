@@ -1,0 +1,90 @@
+.tiketsList {
+  border: 1px solid black;
+  background-color: rgb(247, 247, 247);
+  color: black;
+  //   padding: 10px 15px;
+  grid-area: c;
+  border-radius: 7px;
+  border: none;
+  max-width: 505px;
+
+  .filterCoast {
+    display: flex;
+    justify-content: space-between;
+  }
+  .button {
+    width: 180px;
+    height: 50px;
+    border: 1px solid rgba(223, 229, 236, 1);
+    background-color: rgba(255, 255, 255, 1);
+    border-radius: 3px;
+    cursor: pointer;
+  }
+
+  .button.active {
+    background-color: rgba(33, 150, 243, 1);
+    border: none;
+    color: white;
+  }
+
+  .tiket {
+    background-color: rgba(255, 255, 255, 1);
+    margin-top: 15px;
+    padding: 10px;
+    border-radius: 3px;
+
+    .over {
+      font-size: 13px;
+      font-weight: 600;
+      color: rgba(160, 176, 185, 1);
+    }
+
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 15px;
+
+      .coast {
+        color: rgba(33, 150, 243, 1);
+        font-weight: 600;
+      }
+    }
+
+    .info {
+      display: flex;
+      column-gap: 115px;
+    }
+
+    .direction {
+      display: flex;
+      flex-direction: column;
+
+      span {
+        margin-bottom: 5px;
+      }
+    }
+
+    .timeFly {
+      display: flex;
+      flex-direction: column;
+
+      span {
+        margin-bottom: 5px;
+      }
+    }
+    .stopes {
+      display: flex;
+      flex-direction: column;
+      span {
+        margin-bottom: 5px;
+      }
+    }
+  }
+}
+
+@media (max-width: 800px) {
+  .tiketsList {
+    margin: 0 auto;
+  }
+}
